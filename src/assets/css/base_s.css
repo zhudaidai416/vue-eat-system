@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.clear::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.containerB {
+    background-color: #f5f5f5;
+  }
+  .containerA {
+    /* width: 95%; */
+    margin: 0 50px;
+  }
+  .containerA > p {
+    margin-left: 50px;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .containerS {
+    background-color: #fff;
+    padding: 13px;
+  }
+  .filterBox{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 13px;
+  }
+  .filterAa{
+      height: 40px;
+      display: flex;
+      align-items: center;
+      background-color: #f7f7f9;
+      border-radius: 5px;
+      width: 22%;
+      margin: 12px;
+  }
+  .filterAa>p{
+      height: 100%;
+      line-height: 40px;
+      border-radius: 5px;
+      width: 30%;
+      font-size: 13px;
+      padding-left: 8px;
+      color:#797979;
+  }
+  .filterAa:hover{
+      background-color: #fff;
+  }
+  .filterAa>input,.filterAa>select{
+      border: none;
+      height:90%;
+      background-color: #f7f7f9;
+      border-radius: 5px;
+      width: 70%;
+      padding-left: 8px;
+      margin: 0 auto;
+  }
+  .filterAa>input:hover{
+      background-color: #fff;
+  }
+  .filterAa>select:hover{
+      background-color: #fff;
+  }
+  
+  .btnBox>button{
+      width: 80px;
+      height: 35px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+  }
+  .resetS{
+      background-color: #ff9900;
+  }
+  .searchS{
+      background:linear-gradient(to bottom,#3e80e0,#1694e2);
+  }
+  .resetS:hover{
+      background-color: #ff9900b5;
+  }
+  .searchS:hover{
+      background:linear-gradient(to bottom,#3e7fe0c9,#1694e265);
+  }
+/* 表格 */
+  #printTable{
+    border-spacing:0;
+    width: 100%;
+    font-size: 13px;
+    }
+.tableHead{
+    background-color: #edf1fc;
+}
+#printTable th{
+    height: 45px;
+}
+#printTable .tableBody:hover{
+    background-color: #f4f6fc;
+}
+#printTable .tableBody td{
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #f3f2f2;
+}
+.moreS .el-icon-more:hover{
+    cursor: pointer;
+}
+.moreS{
+    position: relative;
+}
+.moreTips{
+    /* height: 40px; */
+    line-height: 40px;
+    text-align: center;
+    width: 130px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    right: 20px;
+    -webkit-box-shadow:0px 0px 6px 4px #828282 ;
+    -moz-box-shadow:0px 0px 6px 4px #828282 ;
+    box-shadow:0px 0px 6px 4px #828282 ;
+}
+.moreTips>span{
+    color: #000;
+}
+.moreTips .el-icon-tickets{
+    color: #4f73df;
+}
+.el-popover{
+    padding: 0;
+    border:none;
+}
+
+.moreTips .el-picker-panel,.el-popover,.moreTips .el-select-dropdown,.moreTips .el-table-filter,.moreTips .el-time-panel {
+    box-shadow:none;
+}
+/* 分页 */
+.pageBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.pageBox .number{
+    background-color: #f6f7f9;
+    margin: 0 5px;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+}
+.pageBox li.active{
+    background:linear-gradient(to bottom,#3e80e0,#1694e2a7);
+    color: #fff !important;
+}
+/* 模态框 */
+.modalForm form{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: center; */
+    width: 100%;
+}
+.modalForm label{
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+}
+.modalForm select,.modalForm div{
+    width: 77%;
+}
+.modalForm input,.modalForm select{
+    margin: 5px 0;
+}
+.modalForm input{
+    height: 40px;
+}
+/* 详情页的header */
+.detailsHeaderS{
+    width: 100%;
+    font-size: 13px;
+    background-color: #f4f6fd;
+    border-radius: 5px;
+    /* padding: 15px; */
+    display: flex;
+    justify-content: space-around;  
+}
+.detailsHeaderS>div{
+    margin: 20px;
+}
+.detailsHeaderS>div>div{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.detailsHeaderS>div>div>button{
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+}
+/* 地址选择器 */
+.filterAa .el-form-item{
+    display: flex;
+    margin-bottom: 0;
+}
+.filterAa .el-form-item__label{
+    height: 100%;
+    line-height: 40px;
+    border-radius: 5px;
+    width: 25%;
+    font-size: 13px;
+    padding-right: 0;
+    padding-left: 8px;
+    color:#797979;
+}
+.filterAa .el-input__inner{
+    border: none;
+    height:90%;
+    background-color: #f7f7f9;
+    border-radius: 5px;
+    width: 70%;
+    padding-left: 8px;
+}
